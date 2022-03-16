@@ -1,26 +1,21 @@
-Laravel Google Shopping
+Laravel Facebook Catalog
 ==============
-
-[![Latest Stable Version](https://poser.pugx.org/deniztezcan/laravel-google-shopping/v/stable)](https://packagist.org/packages/deniztezcan/laravel-google-shopping)
-[![Total Downloads](https://poser.pugx.org/deniztezcan/laravel-google-shopping/downloads)](https://packagist.org/packages/deniztezcan/laravel-google-shopping)
-[![Latest Unstable Version](https://poser.pugx.org/deniztezcan/laravel-google-shopping/v/unstable)](https://packagist.org/packages/deniztezcan/laravel-google-shopping)
-[![License](https://poser.pugx.org/deniztezcan/laravel-google-shopping/license)](https://packagist.org/packages/deniztezcan/laravel-google-shopping)
 
 ## Installation
 
 ```
-composer require deniztezcan/laravel-google-shopping
+composer require raynl/laravel-facebook-catalog
 ```
 
 ## Example
 ```php
-use DenizTezcan\LaravelGoogleShopping\LaravelGoogleShopping;
+use RayNl\LaravelFacebookCatalog\LaravelFacebookCatalog;
 
-LaravelGoogleShopping::setTitle('Example feed');
-LaravelGoogleShopping::setDescription('Example feed of the Example shop');
-LaravelGoogleShopping::setLink('https://example.shop');
+LaravelFacebookCatalog::setTitle('Example feed');
+LaravelFacebookCatalog::setDescription('Example feed of the Example shop');
+LaravelFacebookCatalog::setLink('https://example.shop');
 
-LaravelGoogleShopping::addItem(
+LaravelFacebookCatalog::addItem(
 	"https://example.shop/p/foo-bar",
 	"SKU123",
 	"Foo bar",
@@ -37,5 +32,5 @@ LaravelGoogleShopping::addItem(
 	]
 );
 
-return LaravelGoogleShopping::display();
+return LaravelFacebookCatalog::display();
 ```

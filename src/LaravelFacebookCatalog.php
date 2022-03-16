@@ -1,10 +1,10 @@
 <?php
 
-namespace DenizTezcan\LaravelGoogleShopping;
+namespace RayNl\LaravelFacebookCatalog;
 
 use Spatie\ArrayToXml\ArrayToXml;
 
-class LaravelGoogleShopping{
+class LaravelFacebookCatalog{
 
 	public static $container = null;
 

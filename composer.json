@@ -1,22 +1,26 @@
 {
-    "name": "deniztezcan/laravel-google-shopping",
+    "name": "raynl/laravel-facebook-catalog",
     "type": "library",
-    "description": "Laravel Google Shopping package",
+    "description": "Laravel Facebook Catalog package",
     "keywords": [
         "laravel",
-        "google-shopping"
+        "facebook-catalog"
     ],
     "version": "0.2.1",
-    "homepage": "https://github.com/deniztezcan/laravel-google-shopping",
+    "homepage": "https://github.com/Ray-nl/laravel-facebook-catalog",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Sjoerd Rutten",
+            "email": "sjoerd@ray.nl"
+        },
         {
             "name": "Deniz Tezcan",
             "email": "howdy@deniztezcan.me"
         }
     ],
     "autoload": {
-        "psr-4": { "DenizTezcan\\LaravelGoogleShopping\\" : "src/" }
+        "psr-4": { "RayNl\\LaravelFacebookCatalog\\" : "src/" }
     },
     "require": {
         "spatie/array-to-xml": "2.8.*|3.*.*",

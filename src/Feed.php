@@ -1,6 +1,6 @@
 <?php
 
-namespace DenizTezcan\LaravelGoogleShopping;
+namespace RayNl\LaravelFacebookCatalog;
 
 use Spatie\ArrayToXml\ArrayToXml;
 
@@ -50,21 +50,20 @@ class Feed{
 		$custom_fields	= NULL
 	){
 		$product = [
-			"link" 				=> $link . "?utm_source=google&utm_medium=googleshopping&utm_campaign=googlemerchantcenter",
 			"g:id" 				=> $id,
-			"title" 			=> $title,
-			"g:image_link"		=> $image_link,
-			"g:description" 	=> $description,
-			"g:availability" 	=> $availability,
-			"g:shipping"			=> [
+			"g:title" 			=> $title,
+            "g:description" 	=> $description,
+            "g:link" 			=> $link . "?utm_source=facebook&utm_medium=facebookCatalog&utm_campaign=",
+            "g:image_link"		=> $image_link,
+            "g:brand" 			=> $brand,
+            "g:condition" 		=> $condition,
+            "g:availability" 	=> $availability,
+            "g:price" 			=> number_format($price, 2, ".", ",") . " " . $this->currency,
+            "g:shipping"			=> [
 				"g:country"			=> $shipping['country'],
 				"g:service"			=> $shipping['service'],
 				"g:price"				=> $shipping['price'],
 			],
-			"g:price" 			=> number_format($price, 2, ".", ",") . " " . $this->currency,
-			"g:brand" 			=> $brand,
-			"g:gtin" 			=> $gtin,
-			"g:condition" 		=> $condition,
 		];
 
 		if(!is_null($product_type)){
