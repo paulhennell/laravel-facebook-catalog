@@ -1,6 +1,8 @@
 Laravel Facebook Catalog
 ==============
 
+This package is a fork of https://github.com/deniztezcan/laravel-google-shopping and adapted to the Facebook Catalog format.
+
 ## Installation
 
 ```
