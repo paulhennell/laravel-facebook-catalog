@@ -52,7 +52,7 @@ class Feed{
 		$product = [
 			"g:id" 				=> $id,
 			"g:title" 			=> $title,
-            "g:description" 	=> $description,
+            "g:description" 	=> strip_tags($description),
             "g:link" 			=> $link . "?utm_source=facebook&utm_medium=facebookCatalog&utm_campaign=",
             "g:image_link"		=> $image_link,
             "g:brand" 			=> $brand,

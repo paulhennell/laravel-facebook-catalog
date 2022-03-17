@@ -6,7 +6,7 @@ This package is a fork of https://github.com/deniztezcan/laravel-google-shopping
 ## Installation
 
 ```
-composer require raynl/laravel-facebook-catalog
+composer require ray-nl/laravel-facebook-catalog
 ```
 
 ## Example
