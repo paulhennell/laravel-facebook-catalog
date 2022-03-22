@@ -103,7 +103,7 @@ class Feed{
 		}
 
 		$xml = ArrayToXml::convert($this->xml, '');
-		$xml = str_replace(['    ', '<root>', '</root>', "\n", "\r", '<remove>remove</remove>'], '', $xml);
+		$xml = str_replace(['    ', '<root>', '</root>', '<remove>remove</remove>'], '', $xml);
 		$xml = preg_replace([
 			"/item_[0-9][0-9][0-9][0-9]/",
 			"/item_[0-9][0-9][0-9]/",
