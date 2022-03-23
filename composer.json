@@ -6,7 +6,6 @@
         "laravel",
         "facebook-catalog"
     ],
-    "version": "1.0.0",
     "homepage": "https://github.com/Ray-nl/laravel-facebook-catalog",
     "license": "MIT",
     "authors": [
