@@ -41,6 +41,7 @@ class Feed{
 		$description 	= "",
 		$availability 	= "",
 		$price 			= 0.00,
+        $sale_price     = null,
 		$brand 			= "",
 		$gtin 			= "",
 		$shipping		= [],
@@ -65,6 +66,10 @@ class Feed{
 				"g:price"				=> $shipping['price'],
 			],
 		];
+
+        if (!is_null($sale_price)) {
+            $product['g:sale_price'] = number_format($sale_price, 2, ".", ",") . " " . $this->currency;
+        }
 
 		if(!is_null($product_type)){
 			$product['g:product_type'] = $product_type;
