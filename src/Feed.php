@@ -32,6 +32,11 @@ class Feed{
 	{
 		$this->link = $link;
 	}
+	
+	 public function setCurrency($currency = 'EUR')
+	{
+		$this->currency = $currency;
+	}
 
 	public function addItem(
 		$link 			= "",
@@ -41,7 +46,7 @@ class Feed{
 		$description 	= "",
 		$availability 	= "",
 		$price 			= 0.00,
-        $sale_price     = null,
+                $sale_price     = null,
 		$brand 			= "",
 		$gtin 			= "",
 		$shipping		= [],
